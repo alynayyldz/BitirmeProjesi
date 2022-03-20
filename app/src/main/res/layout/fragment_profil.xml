@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"></ImageView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:text="İsim Soyisim"
+        android:textColor="@color/lacivert"/>
+
+    <Button
+        android:id="@+id/hesap"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Hesap Bilgilerim"
+        android:layout_gravity="center"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bildirim"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Bildirimler"
+        android:layout_gravity="center"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_notifications_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/favori"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Favori Ürünler"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_favorite_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/odeme"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Ödeme Yöntemleri"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_payment_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/fatura"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Faturalarım"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_insert_drive_file_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/gecmis"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Geçmiş Alışverişler"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_content_paste_go_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/dil"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Dil Seçenekleri"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_g_translate_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/yardim"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Yardım"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_help_center_24"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/cikis"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Çıkış Yap"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/buton"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:padding="10dp"/>
+
+</FrameLayout>

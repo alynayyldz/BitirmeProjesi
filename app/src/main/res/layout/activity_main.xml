@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kirmizi"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/kayit"
+        android:layout_width="210dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/buton_kenar"
+        android:text="Kayıt Ol"
+        android:textColor="@color/kirmizi"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="210dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/buton_kenar"
+        android:text="Giriş Yap"
+        android:textColor="@color/kirmizi"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="211dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sepet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

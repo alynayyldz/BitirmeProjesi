@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SepetFragment"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ekle"
+        android:layout_width="48dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/urun_ekleme">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/odeme"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="550dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buton"
+        android:text="Ödeme"
+        android:textColor="@color/white">
+    </Button>
+
+    <EditText
+        android:id="@+id/tutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="550dp"
+        android:ems="8"
+        android:hint="Toplam Tutar:"
+        android:background="@drawable/edit_duzenleme"
+        android:padding="5dp">
+    </EditText>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/buton.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/buton_kenar.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/edit_duzenleme.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/item_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/round_corner.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_acilis_ekrani.xml" value="0.29896907216494845" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_panel.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_arama.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_ekleme.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_ana_sayfa.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_dil_secenekleri.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_giris_yap.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kayit_ol.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kullanici_islemleri.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_profil.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_scrolling.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_sepet.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/menu/item_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
