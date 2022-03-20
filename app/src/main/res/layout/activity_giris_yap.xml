@@ -7,12 +7,12 @@
     tools:context=".GirisYap"
     android:orientation="vertical">
 
-   <ImageView
-       android:layout_width="215dp"
-       android:layout_height="211dp"
-       android:layout_marginTop="50dp"
-       android:layout_gravity="center"
-       app:srcCompat="@drawable/sepet"></ImageView>
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/sepet"></ImageView>
 
     <EditText
         android:id="@+id/editGirisMail"
@@ -43,7 +43,7 @@
         android:padding="10dp"/>
 
     <Button
-        android:id="@+id/girisYap"
+        android:onClick="girisyap"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

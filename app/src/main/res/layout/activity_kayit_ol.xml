@@ -10,7 +10,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="100dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -31,18 +31,17 @@
                 android:text="" />
         </TableRow>
 
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/email"
+                android:id="@+id/telefon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:text="E-mail :" />
+                android:text="Telefon :" />
             <EditText
-                android:id="@+id/editEmail"
+                android:id="@+id/editTelefon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -55,13 +54,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/telefon"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:text="Telefon:"/>
+                android:text="E-mail:"/>
             <EditText
-                android:id="@+id/editTelefon"
+                android:id="@+id/editEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -79,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="Şifre :"/>
+
             <EditText
                 android:id="@+id/editSifre"
                 android:layout_width="wrap_content"
@@ -86,8 +86,10 @@
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""/>
+                android:password="true"
+                android:text="" />
         </TableRow>
+
 
         <TableRow
             android:layout_width="match_parent"
@@ -114,7 +116,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="100dp">
             <Button
-                android:id="@+id/kayitOl"
+                android:onClick="kayitbass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity=""

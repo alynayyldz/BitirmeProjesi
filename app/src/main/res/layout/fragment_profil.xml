@@ -6,13 +6,6 @@
     tools:context=".ProfilFragment"
     android:orientation="vertical">
 
-
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"></ImageView>
-
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -26,13 +19,13 @@
         android:id="@+id/hesap"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:text="Hesap Bilgilerim"
         android:layout_gravity="center"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="240dp"
         android:background="@drawable/buton"
-        android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_account_box_24"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:text="Hesap Bilgilerim"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/bildirim"
@@ -40,7 +33,7 @@
         android:layout_height="50dp"
         android:text="Bildirimler"
         android:layout_gravity="center"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_notifications_24"
@@ -52,7 +45,7 @@
         android:layout_height="50dp"
         android:text="Favori Ürünler"
         android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_favorite_24"
@@ -64,7 +57,7 @@
         android:layout_height="50dp"
         android:text="Ödeme Yöntemleri"
         android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_payment_24"
@@ -76,7 +69,7 @@
         android:layout_height="50dp"
         android:text="Faturalarım"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_insert_drive_file_24"
@@ -88,7 +81,7 @@
         android:layout_height="50dp"
         android:text="Geçmiş Alışverişler"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_content_paste_go_24"
@@ -100,7 +93,7 @@
         android:layout_height="50dp"
         android:text="Dil Seçenekleri"
         android:layout_gravity="center"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_g_translate_24"
@@ -112,7 +105,7 @@
         android:layout_height="50dp"
         android:text="Yardım"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_help_center_24"
@@ -124,7 +117,7 @@
         android:layout_height="50dp"
         android:text="Çıkış Yap"
         android:layout_gravity="center"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="240dp"
         android:background="@drawable/buton"
         android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
