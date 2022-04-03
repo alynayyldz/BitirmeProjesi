@@ -34,8 +34,6 @@ public class GirisYap extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,12 +49,7 @@ public class GirisYap extends AppCompatActivity implements View.OnClickListener{
         editGirisSifre =(EditText) findViewById(R.id.editGirisSifre);
 
         mAuth = FirebaseAuth.getInstance();
-
-
-
     }
-
-
     @Override
     public void onClick(View view) {
         switch (view.getId()){
@@ -66,9 +59,7 @@ public class GirisYap extends AppCompatActivity implements View.OnClickListener{
             case R.id.unuttum:
                 startActivity(new Intent(this, SifremiUnuttum.class));
                 break;
-
         }
-
     }
 
     private void userLogin() {
@@ -109,8 +100,6 @@ public class GirisYap extends AppCompatActivity implements View.OnClickListener{
                         user.sendEmailVerification();
                         Toast.makeText(GirisYap.this ,"Email onayı için Emailiniz kontrol ediniz ! ",Toast.LENGTH_SHORT).show();
                     }
-
-
                 }else{
                     Toast.makeText(GirisYap.this ,"Giriş Başarısız Bilgileri Kontrol Ediniz !! ",Toast.LENGTH_SHORT).show();
                 }

@@ -7,41 +7,69 @@
     tools:context=".KullaniciIslemleri"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:text="AD"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="278dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="35dp">
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="Soyad"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="340dp" />
+        <TextView
+            android:id="@+id/isim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Ad-Soyad:"
+            android:textSize="14dp"/>
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="Telefon Numarası"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="401dp" />
+        <TextView
+            android:id="@+id/isim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/isim"
+            android:layout_marginTop="40dp" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="E-mail"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="467dp" />
+        <TextView
+            android:id="@+id/numara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Telefon Numarası:"
+            android:textSize="14dp"
+            android:layout_below="@+id/isim"/>
 
+        <TextView
+            android:id="@+id/numara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/numara"
+            android:layout_marginTop="90dp" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:layout_below="@+id/numara"/>
+
+        <TextView
+            android:id="@+id/mail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mail"
+            android:layout_marginTop="135dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/guncelle"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buton"
+        android:text="Profil Bilgilerini Güncelle"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"/>
 </LinearLayout>

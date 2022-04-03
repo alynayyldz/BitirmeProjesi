@@ -12,6 +12,9 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/item_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/round_corner.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/shape.xml" value="0.183" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/text_duzenleme.xml" value="0.2565" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/text_duzenleme2.xml" value="0.2565" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_acilis_ekrani.xml" value="0.29896907216494845" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_panel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_arama.xml" value="0.25416666666666665" />
@@ -20,8 +23,9 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_dil_secenekleri.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_giris_yap.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kayit_ol.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kullanici_islemleri.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kullanici_islemleri.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_profil_guncelleme.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_sifremi_unuttum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_profil.xml" value="0.264" />

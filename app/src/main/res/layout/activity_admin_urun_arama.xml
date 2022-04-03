@@ -1,107 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminUrunArama">
+    tools:context=".AdminUrunArama"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/barkod"
-        android:layout_width="350dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Ürün Barkod"
-        app:layout_constraintBottom_toTopOf="@+id/urunAd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:layout_constraintVertical_bias="0.204" />
+        android:background="@drawable/shape">
 
-    <EditText
-        android:id="@+id/urunAd"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün ad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="207dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/urunAgirlik"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün ağırlığı"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="432dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/urunFiyat"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün birim fiyatı"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/urunMiktar"
-        app:layout_constraintVertical_bias="0.141" />
-
-    <EditText
-        android:id="@+id/urunMarka"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün marka"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="280dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/urunTarih"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün son kullanma tarihi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="355dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/urunMiktar"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün stok miktarı"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="505dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="146dp"
-        android:layout_height="33dp"
-        android:text="Ürün Arama"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/urunAra"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Ürün Arama"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ara"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="140dp"
-        tools:ignore="MissingConstraints"
-        android:background="@drawable/buton">
-    </Button>
+        android:padding="25dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/barkod"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Barkodu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/urunAra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ara"
+            android:layout_below="@+id/barkod"
+            android:textColor="@color/white"
+            android:background="@drawable/buton">
+        </Button>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:id="@+id/urunAd"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Adı"
+            android:layout_below="@+id/urunAra"
+            android:textSize="18dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/urunAgirlik"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Ağırlığı"
+            android:layout_below="@+id/urunAd"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_duzenleme2"/>
+
+        <TextView
+            android:id="@+id/urunFiyat"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Birim Fiyatı"
+            android:layout_below="@+id/urunAgirlik"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_duzenleme2"/>
+
+        <TextView
+            android:id="@+id/urunKategori"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Kategorisi"
+            android:layout_below="@+id/urunFiyat"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_duzenleme2"/>
+
+        <TextView
+            android:id="@+id/urunTarih"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Son Kullanma Tarihi"
+            android:layout_below="@+id/urunKategori"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_duzenleme2"/>
+
+        <EditText
+            android:id="@+id/urunMiktar"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Ürün Stok Miktarı"
+            android:layout_below="@+id/urunTarih"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_duzenleme2"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

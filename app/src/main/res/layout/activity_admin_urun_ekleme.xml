@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,88 +7,115 @@
     tools:context=".AdminUrunEkleme"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/urunBarkod"
-        android:layout_width="350dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Ürün Barkod"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="103dp"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/ekleme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ürün Ekleme"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/barkod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:hint="Ürün Barkod"
+            android:background="@drawable/text_duzenleme2"
+            android:padding="5dp"
+            android:maxLength="14"/>
 
     <EditText
         android:id="@+id/agirlik"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün ağırlığı"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="406dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün Ağırlığı"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/barkod"
+        android:background="@drawable/text_duzenleme2"
+        android:padding="5dp"/>
 
     <EditText
         android:id="@+id/fiyat"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün birim fiyatı"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="550dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün Birim Fiyatı"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/agirlik"
+        android:background="@drawable/text_duzenleme2"
+        android:padding="5dp"/>
 
-    <EditText
-        android:id="@+id/marka"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün marka"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="254dp"
-        tools:ignore="MissingConstraints"/>
+        <TextView
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fiyat"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:hint="Ürün Kategorisi"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textAlignment="viewStart"
+            android:textSize="18dp"
+            android:padding="5dp"/>
 
-    <EditText
-        android:id="@+id/tarih"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün son kullanma tarihi"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="329dp"
-        tools:ignore="MissingConstraints"/>
+        <EditText
+            android:id="@+id/tarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kategori"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:inputType="datetime"
+            android:hint="Ürün Son Kullanma Tarihi"
+            android:padding="5dp" />
 
     <EditText
         android:id="@+id/ad"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün ad"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="181dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün Adı"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tarih"
+        android:background="@drawable/text_duzenleme2"
+        android:padding="5dp"/>
 
     <EditText
         android:id="@+id/miktar"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:text="Ürün stok miktarı"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="479dp"
-        tools:ignore="MissingConstraints"/>
-
-    <TextView
-        android:id="@+id/ekleme"
-        android:layout_width="146dp"
-        android:layout_height="33dp"
-        android:text="Ürün Ekleme"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints"/>
-
-    <Button
-        android:id="@+id/ekle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ekle"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="626dp"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/white"
-        android:background="@drawable/buton"/>
+        android:hint="Ürün Stok Miktarı"
+        android:background="@drawable/text_duzenleme2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ad"
+        android:padding="5dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/ekle"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miktar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buton"
+            android:text="Ürünü Ekle"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

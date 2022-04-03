@@ -7,36 +7,33 @@
     tools:context=".SepetFragment"
     android:orientation="vertical">
 
-    <ImageButton
+    <Button
         android:id="@+id/ekle"
-        android:layout_width="48dp"
-        android:layout_height="61dp"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="350dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/urun_ekleme">
-    </ImageButton>
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ic_baseline_add_shopping_cart_24"></Button>
 
     <Button
         android:id="@+id/odeme"
+        android:layout_width="77dp"
+        android:layout_height="37dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="550dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
         android:background="@drawable/buton"
         android:text="Ödeme"
-        android:textColor="@color/white">
-    </Button>
+        android:textColor="@color/white"></Button>
 
-    <EditText
+    <TextView
         android:id="@+id/tutar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="535dp"
+        android:background="@drawable/text_duzenleme"
         android:ems="8"
         android:hint="Toplam Tutar:"
-        android:background="@drawable/edit_duzenleme"
-        android:padding="5dp">
-    </EditText>
+        android:padding="5dp"></TextView>
 
 </FrameLayout>

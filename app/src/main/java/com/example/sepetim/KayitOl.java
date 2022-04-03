@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Pattern;
 
+
 public class KayitOl extends AppCompatActivity implements View.OnClickListener{
     private FirebaseAuth mAuth;
 
@@ -35,7 +36,7 @@ public class KayitOl extends AppCompatActivity implements View.OnClickListener{
         mAuth = FirebaseAuth.getInstance();
 
         kayitOl = (Button) findViewById(R.id.kayitOl);
-        kayitOl.setOnClickListener( this);
+        kayitOl.setOnClickListener(this);
 
         editAd = (EditText) findViewById(R.id.editAd);
         editTelefon = (EditText) findViewById(R.id.editTelefon);

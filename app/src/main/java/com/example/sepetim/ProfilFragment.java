@@ -65,21 +65,15 @@ public class ProfilFragment extends Fragment {
 
                 if(userProfile != null) {
                     String ad = userProfile.ad;
-
-
                     isimsoyisim.setText(ad);
-
-
-
                 }
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast toast = Toast.makeText(getActivity().getApplicationContext(),"Birşeyler Ters Gitti ",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getActivity().getApplicationContext(),"Bir şeyler ters gitti.",Toast.LENGTH_SHORT);
                 toast.show();
-
             }
         });
 
