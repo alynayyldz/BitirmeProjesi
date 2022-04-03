@@ -36,30 +36,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:hint="Ürün Barkod"
             android:background="@drawable/text_duzenleme2"
-            android:padding="5dp"
-            android:maxLength="14"/>
+            android:hint="Ürün Barkod"
+            android:maxLength="14"
+            android:minHeight="48dp"
+            android:padding="5dp" />
 
-    <EditText
-        android:id="@+id/agirlik"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ürün Ağırlığı"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/barkod"
-        android:background="@drawable/text_duzenleme2"
-        android:padding="5dp"/>
+        <EditText
+            android:id="@+id/agirlik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barkod"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:hint="Ürün Ağırlığı"
+            android:minHeight="48dp"
+            android:padding="5dp" />
 
-    <EditText
-        android:id="@+id/fiyat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ürün Birim Fiyatı"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/agirlik"
-        android:background="@drawable/text_duzenleme2"
-        android:padding="5dp"/>
+        <EditText
+            android:id="@+id/fiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agirlik"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:hint="Ürün Birim Fiyatı"
+            android:minHeight="48dp"
+            android:padding="5dp" />
 
         <TextView
             android:id="@+id/kategori"
@@ -70,9 +73,10 @@
             android:background="@drawable/text_duzenleme2"
             android:hint="Ürün Kategorisi"
             android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="48dp"
+            android:padding="5dp"
             android:textAlignment="viewStart"
-            android:textSize="18dp"
-            android:padding="5dp"/>
+            android:textSize="18dp" />
 
         <EditText
             android:id="@+id/tarih"
@@ -81,29 +85,32 @@
             android:layout_below="@+id/kategori"
             android:layout_marginTop="15dp"
             android:background="@drawable/text_duzenleme2"
-            android:inputType="datetime"
             android:hint="Ürün Son Kullanma Tarihi"
+            android:inputType="datetime"
+            android:minHeight="48dp"
             android:padding="5dp" />
 
-    <EditText
-        android:id="@+id/ad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ürün Adı"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/tarih"
-        android:background="@drawable/text_duzenleme2"
-        android:padding="5dp"/>
+        <EditText
+            android:id="@+id/ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tarih"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:hint="Ürün Adı"
+            android:minHeight="48dp"
+            android:padding="5dp" />
 
-    <EditText
-        android:id="@+id/miktar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ürün Stok Miktarı"
-        android:background="@drawable/text_duzenleme2"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/ad"
-        android:padding="5dp"/>
+        <EditText
+            android:id="@+id/miktar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ad"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_duzenleme2"
+            android:hint="Ürün Stok Miktarı"
+            android:minHeight="48dp"
+            android:padding="5dp" />
 
         <Button
             android:id="@+id/ekle"
