@@ -9,16 +9,17 @@
 
     <Button
         android:id="@+id/ekle"
-        android:layout_width="46dp"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="350dp"
         android:layout_marginTop="18dp"
-        android:background="@drawable/ic_baseline_add_shopping_cart_24"></Button>
+        android:background="@drawable/ic_baseline_add_shopping_cart_24"
+        tools:ignore="SpeakableTextPresentCheck"></Button>
 
     <Button
         android:id="@+id/odeme"
         android:layout_width="77dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="530dp"
         android:background="@drawable/buton"
