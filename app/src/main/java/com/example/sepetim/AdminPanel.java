@@ -18,7 +18,15 @@ public class AdminPanel extends AppCompatActivity {
 
         btnArama=(Button) findViewById(R.id.btnArama);
         btnEkle=(Button) findViewById(R.id.btnEkle);
-        btnCikis=(Button) findViewById(R.id.btnEkle);
+        btnCikis=(Button) findViewById(R.id.btnCikis);
+
+        btnArama.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(AdminPanel.this,AdminUrunArama.class);
+                startActivity(i);
+            }
+        });
 
         btnEkle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,16 +39,10 @@ public class AdminPanel extends AppCompatActivity {
         btnCikis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(AdminPanel.this,GirisYap.class);
-                startActivity(intent);
+                Intent intent2=new Intent(AdminPanel.this,MainActivity.class);
+                startActivity(intent2);
             }
         });
 
-        btnArama.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 }

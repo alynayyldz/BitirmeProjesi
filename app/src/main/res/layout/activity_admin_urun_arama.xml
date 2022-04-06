@@ -1,149 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminUrunArama">
+    tools:context=".AdminUrunArama"
+    android:orientation="vertical">
 
-    <LinearLayout
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarR1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="60dp"
+        android:background="@drawable/shape">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/shape">
+        <ImageButton
+            android:id="@+id/btnGeri"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_back_arrow"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:padding="10dp"/>
 
-            <TextView
-                android:id="@+id/textView35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:text="Ürün Arama"
-                android:textSize="24sp" />
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Ürün Arama"
+            android:textSize="24sp" />
+    </RelativeLayout>
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_below="@+id/toolbarR1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/arama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="25dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_02"
+            android:drawableStart="@drawable/ic_baseline_search"
+            android:layout_toStartOf="@+id/filtre"
+            android:hint="Arama"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck"></EditText>
 
-            <EditText
-                android:id="@+id/barkod"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Barkodu"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"/>
+        <ImageButton
+            android:id="@+id/filtre"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_dashboard_gri"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-            <Button
-                android:id="@+id/urunAra"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ara"
-                android:layout_below="@+id/barkod"
-                android:textColor="@color/white"
-                android:background="@drawable/buton">
-            </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/filtrelenmis"
+            android:layout_below="@+id/arama"
+            android:textColor="@color/black"
+            android:text="Ürünler"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"/>
 
-            <TextView
-                android:layout_marginTop="15dp"
-                android:background="@drawable/text_duzenleme2"
-                android:id="@+id/urunAd"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Adı"
-                android:layout_below="@+id/urunAra"
-                android:textSize="18dp"
-                android:padding="10dp"/>
-
-            <TextView
-                android:id="@+id/urunAgirlik"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Ağırlığı"
-                android:layout_below="@+id/urunAd"
-                android:textSize="18dp"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/text_duzenleme2"/>
-
-            <TextView
-                android:id="@+id/urunFiyat"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Birim Fiyatı"
-                android:layout_below="@+id/urunAgirlik"
-                android:textSize="18dp"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/text_duzenleme2"/>
-
-            <TextView
-                android:id="@+id/urunKategori"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Kategorisi"
-                android:layout_below="@+id/urunFiyat"
-                android:textSize="18dp"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/text_duzenleme2"/>
-
-            <TextView
-                android:id="@+id/urunTarih"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Son Kullanma Tarihi"
-                android:layout_below="@+id/urunKategori"
-                android:textSize="18dp"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/text_duzenleme2"/>
-
-            <EditText
-                android:id="@+id/urunMiktar"
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:hint="Ürün Stok Miktarı"
-                android:layout_below="@+id/urunTarih"
-                android:textSize="18dp"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/text_duzenleme2"/>
-
-            <Button
-                android:id="@+id/sil"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/urunMiktar"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
-                android:background="@drawable/buton"
-                android:text="Ürünü Sil"
-                android:textColor="@color/white">
-            </Button>
-
-            <Button
-                android:id="@+id/guncelle"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/sil"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
-                android:background="@drawable/buton"
-                android:text="Ürünü Güncelle"
-                android:textColor="@color/white">
-            </Button>
-
-        </RelativeLayout>
-
-    </LinearLayout>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/urunlerRv"
+           android:layout_below="@+id/filtrelenmis"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           tools:listitem="@layout/urunler">
+       </androidx.recyclerview.widget.RecyclerView>
 
 
-</ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

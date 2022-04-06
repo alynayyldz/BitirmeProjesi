@@ -13,8 +13,7 @@
         android:layout_height="55dp"
         android:text="Ürün arama"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_marginTop="250dp" />
 
     <Button
         android:id="@+id/btnEkle"
@@ -23,20 +22,18 @@
         android:text="Ürün Ekleme"
         android:layout_gravity="center"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="146dp"
-        tools:ignore="MissingConstraints"/>
+        tools:layout_editor_absoluteY="146dp" />
 
     <Button
         android:id="@+id/btnCikis"
         android:layout_width="380dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
         android:background="@drawable/buton"
         android:text="Çıkış Yap"
         android:textColor="@color/white"
-        android:layout_marginTop="120dp"
-        android:layout_gravity="center"
         tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="554dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="554dp" />
 
 </LinearLayout>
