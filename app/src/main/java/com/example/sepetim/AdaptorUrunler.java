@@ -30,7 +30,7 @@ public class AdaptorUrunler extends RecyclerView.Adapter<AdaptorUrunler.HolderUr
     @NonNull
     @Override
     public HolderUrunler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.urunler,parent,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.activity_admin_urun_arama,parent,false);
         return new HolderUrunler(view);
     }
 

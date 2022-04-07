@@ -7,6 +7,12 @@
     android:orientation="vertical"
     android:background="@color/white">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
     <TextView
         android:id="@+id/isimsoyisim"
         android:layout_width="174dp"

@@ -29,6 +29,8 @@ public class UrunFiltre extends Filter {
                     filtreModels.add(filtreList.get(i));
                 }
             }
+            filterResults.count=filtreModels.size();
+            filterResults.values=filtreModels;
         }
         else {
             filterResults.count=filtreList.size();

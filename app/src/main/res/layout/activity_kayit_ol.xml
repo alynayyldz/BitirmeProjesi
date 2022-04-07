@@ -30,7 +30,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text=""
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -42,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="Telefon :" />
+
             <EditText
                 android:id="@+id/editTelefon"
                 android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""/>
+                android:text=""
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -61,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:text="E-mail:"/>
+
             <EditText
                 android:id="@+id/editEmail"
                 android:layout_width="wrap_content"
@@ -68,7 +71,8 @@
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text=""/>
+                android:text=""
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -89,7 +93,8 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:password="true"
-                android:text="" />
+                android:text=""
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
 
@@ -97,11 +102,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="100dp">
+
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                tools:ignore="TouchTargetSizeCheck" />
             <TextView
                 android:id="@+id/metin"
                 android:layout_width="wrap_content"

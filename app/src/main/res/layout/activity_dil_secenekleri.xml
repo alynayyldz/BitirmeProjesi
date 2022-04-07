@@ -27,19 +27,21 @@
             android:id="@+id/secimTurkce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:minHeight="48dp"
             android:text="Türkçe"
-            android:textSize="18dp"
             android:textColor="@color/black"
-            android:layout_marginLeft="15dp"/>
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/secimIngilizce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:minHeight="48dp"
             android:text="İngilizce"
-            android:textSize="18dp"
             android:textColor="@color/black"
-            android:layout_marginLeft="15dp"/>
+            android:textSize="18dp" />
     </RadioGroup>
 
 

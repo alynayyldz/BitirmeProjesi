@@ -3,6 +3,7 @@ package com.example.sepetim;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -35,6 +36,7 @@ public class AdminUrunArama extends AppCompatActivity {
 
     private ArrayList<ModelUrunler> urunlerArrayList;
     private AdaptorUrunler adaptorUrunler;
+    private RecyclerView urunlerRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,7 @@ public class AdminUrunArama extends AppCompatActivity {
         metin=(TextView) findViewById(R.id.metin);
         filtre=(ImageButton) findViewById(R.id.filtre);
         btnGeri=(ImageButton) findViewById(R.id.btnGeri);
+        urunlerRv=(RecyclerView) findViewById(R.id.urunlerRv);
 
 
         progressDialog = new ProgressDialog(this);
@@ -52,7 +55,7 @@ public class AdminUrunArama extends AppCompatActivity {
         progressDialog.setCanceledOnTouchOutside(false);
         firebaseAuth=FirebaseAuth.getInstance();
 
-        tumUrunleriYukle();
+        //tumUrunleriYukle();
 
         arama.addTextChangedListener(new TextWatcher() {
             @Override
@@ -126,6 +129,7 @@ public class AdminUrunArama extends AppCompatActivity {
                             }
                         }
                         adaptorUrunler=new AdaptorUrunler(AdminUrunArama.this,urunlerArrayList);
+                        urunlerRv.setAdapter(adaptorUrunler);
                     }
 
                     @Override
@@ -148,6 +152,7 @@ public class AdminUrunArama extends AppCompatActivity {
                     urunlerArrayList.add(modelUrunler);
                 }
                 adaptorUrunler=new AdaptorUrunler(AdminUrunArama.this,urunlerArrayList);
+                urunlerRv.setAdapter(adaptorUrunler);
             }
 
             @Override
