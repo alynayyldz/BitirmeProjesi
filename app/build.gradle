@@ -44,7 +44,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
 
     //firebase
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
     implementation 'com.google.firebase:firebase-database:20.0.4'
 
     testImplementation 'junit:junit:4.+'

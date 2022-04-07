@@ -135,7 +135,7 @@ public class AdminUrunEkleme extends AppCompatActivity {
 
     private void urunEkle() {
         //Veri tabanına ürün ekleme
-        progressDialog.setMessage("Ürün ekleniyor...");
+        progressDialog.setMessage("Ürün eklendi.");
         progressDialog.show();
 
         String timestamp=""+System.currentTimeMillis();

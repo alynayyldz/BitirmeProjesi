@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AdminUrunArama"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
 
     <!--Toolbar-->
@@ -25,15 +26,15 @@
             android:padding="10dp"/>
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/metin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:text="Ürün Arama"
-            android:textSize="24sp" />
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -49,11 +50,11 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/filtre"
             android:background="@drawable/shape_02"
             android:drawableStart="@drawable/ic_baseline_search"
-            android:layout_toStartOf="@+id/filtre"
-            android:hint="Arama"
             android:drawablePadding="10dp"
+            android:hint="Arama"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck"></EditText>
 

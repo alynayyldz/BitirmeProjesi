@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".AnaSayfa"
     android:id="@+id/body_container"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
