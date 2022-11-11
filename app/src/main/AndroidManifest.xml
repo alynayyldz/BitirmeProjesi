@@ -22,8 +22,17 @@
         android:theme="@style/Theme.Sepetim"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ProfilGuncelleme"
+            android:name=".ProfilGuncelle"
             android:exported="false" />
+        <activity
+            android:name=".AdminGiris"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SifremiUnuttum"
             android:exported="false" />
@@ -41,30 +50,23 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> />
-        </activity>
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".AdminUrunEkleme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> />
+            </intent-filter>
         </activity>
         <activity
             android:name=".AdminUrunArama"
             android:exported="true"
             tools:ignore="WrongManifestParent">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter> />
-        </activity>
-        <activity
-            android:name=".DilSecenekleri"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,6 +78,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -83,11 +86,11 @@
             android:name=".GirisYap"
             android:exported="true"
             tools:ignore="WrongManifestParent">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".KayitOl"

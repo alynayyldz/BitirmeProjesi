@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,67 +9,138 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape">
+
+        <ImageButton
+            android:id="@+id/btnGeri"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_back_arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka"
+            android:padding="8dp"
+            android:text="@string/profil"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="35dp">
 
-        <TextView
-            android:id="@+id/isim"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginTop="50dp"
-            android:text="Ad-Soyad:"
-            android:textSize="14dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/isim2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/isim"
-            android:layout_marginTop="40dp" />
+            <TableRow>
+                <TextView
+                    android:id="@+id/isim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="50dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka"
+                    android:textColor="@color/black"
+                    android:text="Ad-Soyad:"
+                    android:textSize="14dp"/>
 
-        <TextView
-            android:id="@+id/numara"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Telefon Numarası:"
-            android:textSize="14dp"
-            android:layout_below="@+id/isim"/>
+                <TextView
+                    android:id="@+id/isim2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/isim"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp" />
+            </TableRow>
 
-        <TextView
-            android:id="@+id/numara2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/numara"
-            android:layout_marginTop="90dp" />
+            <TableRow>
+                <TextView
+                    android:id="@+id/numara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Telefon Numarası:"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/isim"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka"/>
 
-        <TextView
-            android:id="@+id/mail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="E-mail:"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:textSize="14dp"
-            android:layout_below="@+id/numara"/>
+                <TextView
+                    android:id="@+id/numara2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/numara"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/mail2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/mail"
-            android:layout_marginTop="135dp" />
+            <TableRow>
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail:"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/numara"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fredoka"/>
+
+                <TextView
+                    android:id="@+id/mail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/mail"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/fredoka"/>
+            </TableRow>
+        </TableLayout>
     </RelativeLayout>
 
     <Button
         android:id="@+id/guncelle"
-        android:layout_width="249dp"
+        android:layout_width="218dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:background="@drawable/buton"
-        android:text="Profil Bilgilerini Güncelle"
+        android:fontFamily="@font/fredoka"
+        android:text="Bilgileri Güncelle"
         android:textColor="@color/white"
-        android:layout_marginTop="30dp"/>
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buton"
+        android:fontFamily="@font/fredoka"
+        android:text="Hesabımı Sil"
+
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 </LinearLayout>

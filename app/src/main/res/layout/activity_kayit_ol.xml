@@ -19,6 +19,8 @@
                 android:id="@+id/ad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:text="Ad-Soyad:"/>
 
@@ -26,6 +28,8 @@
                 android:id="@+id/editAd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -40,6 +44,8 @@
                 android:id="@+id/telefon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:text="Telefon :" />
 
@@ -47,6 +53,8 @@
                 android:id="@+id/editTelefon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -61,6 +69,8 @@
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:text="E-mail:"/>
 
@@ -68,6 +78,8 @@
                 android:id="@+id/editEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -82,6 +94,8 @@
                 android:id="@+id/sifre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:text="Şifre :"/>
 
@@ -89,6 +103,8 @@
                 android:id="@+id/editSifre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_marginLeft="40dp"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -113,6 +129,8 @@
                 android:id="@+id/metin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:layout_gravity="center"
                 android:text="Sözleşmeyi okudum onaylıyorum." />
 
@@ -129,6 +147,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity=""
+                android:textStyle="bold"
+                android:fontFamily="@font/fredoka"
                 android:backgroundTint="@color/kirmizi"
                 android:textColor="@color/white"
                 android:text="Kayıt ol"

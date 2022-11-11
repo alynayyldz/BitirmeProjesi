@@ -16,6 +16,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_baseline_ileri.xml" value="0.191" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_basket.xml" value="0.2595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_dashboard_gri.xml" value="0.1245" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_delete.xml" value="0.1245" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/item_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/round_corner.xml" value="0.2703125" />
@@ -24,15 +26,17 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/text_duzenleme.xml" value="0.2565" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/drawable/text_duzenleme2.xml" value="0.2565" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_acilis_ekrani.xml" value="0.29896907216494845" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_giris.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_panel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_arama.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_ekleme.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_admin_urun_ekleme.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_ana_sayfa.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_dil_secenekleri.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_giris_yap.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kayit_ol.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_kullanici_islemleri.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_profil_guncelle.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_profil_guncelleme.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/activity_sifremi_unuttum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
@@ -42,6 +46,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/layout/urunler.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/menu/item_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.101" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Bitirme Projesi/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2315" />
       </map>
     </option>
   </component>

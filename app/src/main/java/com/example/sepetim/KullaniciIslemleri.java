@@ -1,13 +1,16 @@
 package com.example.sepetim;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,13 +24,13 @@ import com.google.firebase.database.ValueEventListener;
 
 public class KullaniciIslemleri extends AppCompatActivity {
 
-    TextView isim2,numara2,mail2;
-    Button guncelle;
-
+    TextView isim2,numara2,mail2,text;
+    Button guncelle,sil;
+    ImageButton btnGeri;
 
     private FirebaseUser user;
     private DatabaseReference reference;
-    private String kullaniciId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,42 +41,53 @@ public class KullaniciIslemleri extends AppCompatActivity {
         numara2=(TextView) findViewById(R.id.numara2);
         mail2=(TextView) findViewById(R.id.mail2);
         guncelle=(Button) findViewById(R.id.guncelle);
+        btnGeri=(ImageButton) findViewById(R.id.btnGeri);
+        sil=(Button) findViewById(R.id.sil);
 
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference("Kullanıcılar");
-        kullaniciId =user.getUid();
-
-        reference.child(kullaniciId).addListenerForSingleValueEvent(new ValueEventListener() {
+        btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile = snapshot.getValue(User.class);
-
-                if(userProfile != null) {
-                    String ad = userProfile.ad;
-                    isim2.setText(ad);
-
-                    String no=userProfile.telefon;
-                    numara2.setText(no);
-
-                    String eMail=userProfile.email;
-                    mail2.setText(eMail);
-                }
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast toast = Toast.makeText(KullaniciIslemleri.this,"Bir şeyler ters gitti.",Toast.LENGTH_SHORT);
-                toast.show();
+            public void onClick(View v) {
+                Intent intent=new Intent(KullaniciIslemleri.this,ProfilFragment.class);
+                startActivity(intent);
             }
         });
 
         guncelle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(KullaniciIslemleri.this,ProfilGuncelleme.class);
+                Intent intent=new Intent(KullaniciIslemleri.this,ProfilGuncelle.class);
                 startActivity(intent);
             }
         });
 
-
+        sil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //normalAlertDialog(v);
+            }
+        });
     }
+   /* public void normalAlertDialog(View v) {
+        AlertDialog.Builder alert=new AlertDialog.Builder(this);
+        alert.setTitle("Hesabımı Sil");
+        alert.setMessage("Hesabınızı silmek istediğinize emin misiniz?");
+        alert.setCancelable(false); //kapanmasını engeller.
+        alert.setPositiveButton("Evet", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                reference = FirebaseDatabase.getInstance().getReference("Kullanıcılar");
+                reference.removeValue();
+                Intent i=new Intent(KullaniciIslemleri.this,MainActivity.class);
+                startActivity(i);
+                Toast.makeText(getApplicationContext(),"Hesabınız silindi.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        alert.setNegativeButton("Hayır", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alert.show();
+    }*/
 }

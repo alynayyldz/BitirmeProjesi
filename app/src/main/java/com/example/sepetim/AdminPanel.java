@@ -39,7 +39,7 @@ public class AdminPanel extends AppCompatActivity {
         btnCikis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2=new Intent(AdminPanel.this,MainActivity.class);
+                Intent intent2=new Intent(AdminPanel.this,AdminGiris.class);
                 startActivity(intent2);
             }
         });

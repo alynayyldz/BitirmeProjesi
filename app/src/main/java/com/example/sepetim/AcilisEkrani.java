@@ -20,12 +20,9 @@ public class AcilisEkrani extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acilis_ekrani);
-
         metin=(TextView) findViewById(R.id.metin);
-        textviewAnimation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.textview_anim);
-
+        textviewAnimation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.textview_anim); //animasyonun yüklenmesi
         handler=new Handler();
-
         /*View decorView=getWindow().getDecorView();
         decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
@@ -34,20 +31,15 @@ public class AcilisEkrani extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);*/
-
-
         Runnable runnable=new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(AcilisEkrani.this,MainActivity.class);
+                Intent intent=new Intent(AcilisEkrani.this,MainActivity.class); //animasyon sonrası ana ekrana geçiş
                 startActivity(intent);
                 finish();
             }
         };
-
-        handler.postDelayed(runnable,5000);
-
+        handler.postDelayed(runnable,5000); //5000 milisaniyede run edililiyor.
         metin.setAnimation(textviewAnimation);
-
     }
 }

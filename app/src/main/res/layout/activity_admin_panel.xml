@@ -14,7 +14,9 @@
         android:layout_height="55dp"
         android:text="Ürün arama"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp" />
+        android:layout_marginTop="250dp"
+        android:textColor="@color/white"
+        android:background="@color/lacivert"/>
 
     <Button
         android:id="@+id/btnEkle"
@@ -23,7 +25,10 @@
         android:text="Ürün Ekleme"
         android:layout_gravity="center"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="146dp" />
+        tools:layout_editor_absoluteY="146dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@color/lacivert"/>
 
     <Button
         android:id="@+id/btnCikis"

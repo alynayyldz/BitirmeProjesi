@@ -92,6 +92,7 @@ public class AdminUrunEkleme extends AppCompatActivity {
         urunAd=ad.getText().toString().trim();
         urunMiktar=miktar.getText().toString().trim();
 
+        //Boş bırakılamaz gibi çeşitli kontroller
         if(TextUtils.isEmpty((urunBarkod))) {
             barkod.setError("Barkod kısmı boş bırakılamaz.");
             barkod.requestFocus();
@@ -135,7 +136,7 @@ public class AdminUrunEkleme extends AppCompatActivity {
 
     private void urunEkle() {
         //Veri tabanına ürün ekleme
-        progressDialog.setMessage("Ürün eklendi.");
+        progressDialog.setMessage("Ürün ekleniyor...");
         progressDialog.show();
 
         String timestamp=""+System.currentTimeMillis();
@@ -157,7 +158,7 @@ public class AdminUrunEkleme extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         progressDialog.dismiss();
-                        Toast.makeText(AdminUrunEkleme.this,"Ürün Ekleniyor...",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AdminUrunEkleme.this,"Ürün Eklendi.",Toast.LENGTH_SHORT).show();
                         veriyiTemizle();
                     }
                 })

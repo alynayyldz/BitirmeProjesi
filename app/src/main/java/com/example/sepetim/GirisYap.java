@@ -91,23 +91,36 @@ public class GirisYap extends AppCompatActivity implements View.OnClickListener{
         mAuth.signInWithEmailAndPassword(email , sifre).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if (email.equals("alynayyldz@gmail.com")) {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-                    if(user.isEmailVerified()){
-                        startActivity(new Intent(GirisYap.this,AnaSayfa.class));
-                    }else {
-                        user.sendEmailVerification();
-                        Toast.makeText(GirisYap.this ,"Email onayı için Emailiniz kontrol ediniz ! ",Toast.LENGTH_SHORT).show();
+                            if (user.isEmailVerified()) {
+                                startActivity(new Intent(GirisYap.this, AdminPanel.class));
+                            } else {
+                                user.sendEmailVerification();
+                                Toast.makeText(GirisYap.this, "", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Toast.makeText(GirisYap.this, "Giriş Başarısız Bilgileri Kontrol Ediniz !! ", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }else{
-                    Toast.makeText(GirisYap.this ,"Giriş Başarısız Bilgileri Kontrol Ediniz !! ",Toast.LENGTH_SHORT).show();
+                    else {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                            if (user.isEmailVerified()) {
+                                startActivity(new Intent(GirisYap.this, AnaSayfa.class));
+                            } else {
+                                user.sendEmailVerification();
+                                Toast.makeText(GirisYap.this, "Email Onayı İçin E-mailiniz Kontrol Ediniz ! ", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Toast.makeText(GirisYap.this, "Giriş Başarısız Bilgileri Kontrol Ediniz !! ", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 }
-            }
         });
-
-
     }
-
 }
 

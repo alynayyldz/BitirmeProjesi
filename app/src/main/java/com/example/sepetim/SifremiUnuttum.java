@@ -21,10 +21,6 @@ public class SifremiUnuttum extends AppCompatActivity {
 
     FirebaseAuth auth;
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,12 +44,12 @@ public class SifremiUnuttum extends AppCompatActivity {
         String email = editemailreset.getText().toString().trim();
 
         if(email.isEmpty()){
-            editemailreset.setError("Email kısmı boş olamaz !");
+            editemailreset.setError("E-mail kısmı boş olamaz !");
             editemailreset.requestFocus();
             return;
         }
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editemailreset.setError("Email formatına dikkat ediniz !");
+            editemailreset.setError("E-mail formatına dikkat ediniz !");
             editemailreset.requestFocus();
             return;
 
@@ -62,7 +58,7 @@ public class SifremiUnuttum extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(SifremiUnuttum.this,"E-mailinizi Kontrol Ediniz !!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SifremiUnuttum.this,"E-ailinizi Kontrol Ediniz !!",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(SifremiUnuttum.this,"Bir şeyler ters gitti !!",Toast.LENGTH_SHORT).show();
 

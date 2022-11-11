@@ -1,137 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminUrunEkleme"
-    android:orientation="vertical">
+    tools:context=".AdminUrunEkleme">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/shape">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnGeri"
-            android:layout_width="32dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:padding="10dp"
-            android:src="@drawable/ic_baseline_back_arrow"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape">
 
-        <TextView
-            android:id="@+id/ekleme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ürün Ekleme"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:background="@null"/>
+            <ImageButton
+                android:id="@+id/btnGeri"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_back_arrow"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/ekleme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:text="Ürün Ekleme"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp">
+        </RelativeLayout>
 
-        <EditText
-            android:id="@+id/barkod"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Barkod"
-            android:maxLength="14"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            android:padding="5dp">
 
-        <EditText
-            android:id="@+id/agirlik"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/barkod"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Ağırlığı"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            <EditText
+                android:id="@+id/barkod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Barkod"
+                android:maxLength="14"
+                android:minHeight="48dp"
+                android:padding="5dp" />
 
-        <EditText
-            android:id="@+id/fiyat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/agirlik"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Birim Fiyatı"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            <EditText
+                android:id="@+id/agirlik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/barkod"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Ağırlığı"
+                android:minHeight="48dp"
+                android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/kategori"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fiyat"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Kategorisi"
-            android:inputType="textCapSentences|textMultiLine"
-            android:minHeight="48dp"
-            android:padding="5dp"
-            android:textAlignment="viewStart"
-            android:textSize="18dp" />
+            <EditText
+                android:id="@+id/fiyat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agirlik"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Birim Fiyatı"
+                android:minHeight="48dp"
+                android:padding="5dp" />
 
-        <EditText
-            android:id="@+id/tarih"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/kategori"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Son Kullanma Tarihi"
-            android:inputType="datetime"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fiyat"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Kategorisi"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
 
-        <EditText
-            android:id="@+id/ad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tarih"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Adı"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            <EditText
+                android:id="@+id/tarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kategori"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Son Kullanma Tarihi"
+                android:inputType="datetime"
+                android:minHeight="48dp"
+                android:padding="5dp" />
 
-        <EditText
-            android:id="@+id/miktar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ad"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/text_duzenleme2"
-            android:hint="Ürün Stok Miktarı"
-            android:minHeight="48dp"
-            android:padding="5dp" />
+            <EditText
+                android:id="@+id/ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tarih"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Adı"
+                android:minHeight="48dp"
+                android:padding="5dp" />
 
-        <Button
-            android:id="@+id/ekle"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/miktar"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/buton"
-            android:text="Ürünü Ekle"
-            android:textColor="@color/white" />
-    </RelativeLayout>
+            <EditText
+                android:id="@+id/miktar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ad"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_duzenleme2"
+                android:hint="Ürün Stok Miktarı"
+                android:minHeight="48dp"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/ekle"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/miktar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buton"
+                android:text="Ürünü Ekle"
+                android:textColor="@color/white" />
+        </RelativeLayout>
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GirisYap"
+    tools:context=".AdminGiris"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="215dp"
-        android:layout_height="211dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/adminIcon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_baseline_admin"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/sepet"></ImageView>
+        android:layout_marginTop="70dp">
+    </ImageView>
 
     <EditText
-        android:id="@+id/editGirisMail"
+        android:id="@+id/adminMail"
         android:layout_width="237dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
@@ -24,13 +26,13 @@
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:ems="10"
         android:hint="E-Mail"
-        android:inputType="textPersonName"
         android:textStyle="bold"
         android:fontFamily="@font/fredoka"
+        android:inputType="textPersonName"
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/editGirisSifre"
+        android:id="@+id/adminSifre"
         android:layout_width="238dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
@@ -39,27 +41,25 @@
         android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
         android:ems="10"
         android:hint="Şifre"
-        android:inputType="textPassword"
         android:textStyle="bold"
         android:fontFamily="@font/fredoka"
+        android:inputType="textPassword"
         android:padding="10dp"
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="345dp" />
 
     <Button
-        android:id="@+id/girisyap"
+        android:id="@+id/giris"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/buton_kenar"
+        android:backgroundTint="@color/kirmizi"
         android:textStyle="bold"
         android:fontFamily="@font/fredoka"
-        android:backgroundTint="@color/kirmizi"
         android:text="Giriş Yap"
         android:textColor="@color/white" />
-
-
 
     <TextView
         android:id="@+id/unuttum"
@@ -67,11 +67,10 @@
         android:layout_height="21dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="@string/unuttum"
         android:textStyle="bold"
         android:fontFamily="@font/fredoka"
+        android:text="@string/unuttum"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="643dp"/>
-
+        tools:layout_editor_absoluteY="643dp"></TextView>
 
 </LinearLayout>

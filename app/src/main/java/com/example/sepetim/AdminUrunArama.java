@@ -12,124 +12,76 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class AdminUrunArama extends AppCompatActivity {
 
-    private EditText arama;
-    private TextView metin;
-    private ImageButton filtre,btnGeri;
+    private EditText barkod;
+    private TextView urunAd, urunAgirlik, urunFiyat, urunKategori, urunTarih, urunMiktar;
+    private Button urunAra, sil, guncelle;
+    private ImageButton btnGeri;
 
     private FirebaseAuth firebaseAuth;
-    private ProgressDialog progressDialog;
-
-    private ArrayList<ModelUrunler> urunlerArrayList;
-    private AdaptorUrunler adaptorUrunler;
-    private RecyclerView urunlerRv;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_urun_arama);
 
-        arama=(EditText) findViewById(R.id.arama);
-        metin=(TextView) findViewById(R.id.metin);
-        filtre=(ImageButton) findViewById(R.id.filtre);
+        barkod=(EditText) findViewById(R.id.barkod);
+
+        urunAd=(TextView) findViewById(R.id.urunAd);
+        urunAgirlik=(TextView) findViewById(R.id.urunAgirlik);
+        urunFiyat=(TextView) findViewById(R.id.urunFiyat);
+        urunKategori=(TextView) findViewById(R.id.urunKategori);
+        urunTarih=(TextView) findViewById(R.id.urunTarih);
+        urunMiktar=(TextView) findViewById(R.id.urunMiktar);
+
+        urunAra=(Button) findViewById(R.id.urunAra);
+        sil=(Button) findViewById(R.id.sil);
+        guncelle=(Button) findViewById(R.id.guncelle);
+
         btnGeri=(ImageButton) findViewById(R.id.btnGeri);
-        urunlerRv=(RecyclerView) findViewById(R.id.urunlerRv);
-
-
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Lütfen bekleyin...");
-        progressDialog.setCanceledOnTouchOutside(false);
-        firebaseAuth=FirebaseAuth.getInstance();
-
-        //tumUrunleriYukle();
-
-        arama.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                try {
-                    adaptorUrunler.getFilter().filter(s);
-                }
-                catch(Exception e) {
-                    e.printStackTrace();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-
-        filtre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder=new AlertDialog.Builder(AdminUrunArama.this);
-                builder.setTitle("Kategori Seçiniz:")
-                        .setItems(Icerik.urun_kategori2, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                String secim=Icerik.urun_kategori2[which];
-                                if(secim.equals("Hepsi")) {
-                                    tumUrunleriYukle();
-                                }
-                                else {
-                                    // seçimi yükle
-                                   secilenUrunleriYukle(secim);
-                                }
-                            }
-                        })
-                .show();
-            }
-        });
 
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(AdminUrunArama.this,AdminPanel.class);
-                startActivity(intent);
+                Intent i=new Intent(AdminUrunArama.this,AdminPanel.class);
+                startActivity(i);
             }
         });
 
-    }
+        user = FirebaseAuth.getInstance().getCurrentUser();
 
-    private void secilenUrunleriYukle(String secim) {
-        urunlerArrayList=new ArrayList<>();
         DatabaseReference reference= FirebaseDatabase.getInstance().getReference("Kullanıcılar");
         reference.child(firebaseAuth.getUid()).child("Urunler")
-                .addValueEventListener(new ValueEventListener() {
+                .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        urunlerArrayList.clear();
-                        for (DataSnapshot ds:snapshot.getChildren()) {
+                        User user=snapshot.getValue(User.class);
 
-                            String urunKategori=""+ds.child("kategori").getValue();
+                        if(barkod!=null) {
+                            String ad=user.ad;
+                            urunAd.setText(ad);
 
-                            if(secim.equals(urunKategori)) {
-                                ModelUrunler modelUrunler=ds.getValue(ModelUrunler.class);
-                                urunlerArrayList.add(modelUrunler);
-                            }
+                            //String agirlik=
                         }
-                        adaptorUrunler=new AdaptorUrunler(AdminUrunArama.this,urunlerArrayList);
-                        urunlerRv.setAdapter(adaptorUrunler);
                     }
 
                     @Override
@@ -137,28 +89,5 @@ public class AdminUrunArama extends AppCompatActivity {
 
                     }
                 });
-    }
-
-    private void tumUrunleriYukle() {
-        urunlerArrayList=new ArrayList<>();
-        DatabaseReference reference= FirebaseDatabase.getInstance().getReference("Kullanıcılar");
-        reference.child(firebaseAuth.getUid()).child("Urunler")
-        .addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                urunlerArrayList.clear();
-                for (DataSnapshot ds:snapshot.getChildren()) {
-                    ModelUrunler modelUrunler=ds.getValue(ModelUrunler.class);
-                    urunlerArrayList.add(modelUrunler);
-                }
-                adaptorUrunler=new AdaptorUrunler(AdminUrunArama.this,urunlerArrayList);
-                urunlerRv.setAdapter(adaptorUrunler);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
     }
 }

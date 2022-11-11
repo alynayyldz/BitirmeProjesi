@@ -28,7 +28,7 @@ public class ProfilFragment extends Fragment {
     private String kullaniciId;
 
 
-    Button cikis,hesap,dil;
+    Button cikis,hesap;
     TextView isimsoyisim,kulId;
 
     public ProfilFragment() {
@@ -47,10 +47,10 @@ public class ProfilFragment extends Fragment {
         View v=inflater.inflate(R.layout.fragment_profil,container,false);
         cikis=v.findViewById(R.id.cikis);
         hesap=v.findViewById(R.id.hesap);
-        dil=v.findViewById(R.id.dil);
+
 
         isimsoyisim=v.findViewById(R.id.isimsoyisim);
-        kulId=v.findViewById(R.id.kulId);
+        //kulId=v.findViewById(R.id.kulId);
 
 
 
@@ -97,13 +97,7 @@ public class ProfilFragment extends Fragment {
             }
         });
 
-        dil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),DilSecenekleri.class);
-                startActivity(intent);
-            }
-        });
+
         return v;
 
     }
